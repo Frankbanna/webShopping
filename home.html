@@ -3,234 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoping</title>
-<link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <title>Shopping</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-   
-    
+
     <nav>
-        <div class="nav-container">
-            <a href="home.html">
-                <img src="./imgs/pf.png " class=" logo">
-            </a>
-
-            <div class="nav-profile">
-                <p class="nav-profile-name">Bearbug</p>
-                 <div class="nav-profile-cart">
-                    <div class="cartcount">
-                        5
-                    </div>
-                    <i class="fas fa-cart-shopping"></i>
-                 </div>
+      <div class="nav-container">
+        <a href="index.html">
+          <img src="./imgs/pf.png " class="logonav">
+        </a>
+  
+        <div class="nav-profile">
+          <p class="nav-profile-name">Bearbug</p>
+          <div onclick="openCart()" style="cursor: pointer;" class="nav-profile-cart">
+            <i class="fas fa-cart-shopping"></i>
+            <div id="cartcount" class="cartcount" style="display: none;">
+              0
             </div>
-
+          </div>
         </div>
-
+      </div>
     </nav>
+  
     <div class="container">
-        <div class="sidebar">
-            <input type="text" class="sidebar-search" placeholder="Searchsomthing..">
-            <A href="#" class="sidebar-items">
-                Menu 1
-            </A>
-            <A href="#" class="sidebar-items">
-                Menu 2
-            </A>
-            <A href="#" class="sidebar-items">
-                Menu 2
-            </A>
-            <A href="#" class="sidebar-items">
-                Menu 3
-            </A>
-            <A href="#" class="sidebar-items">
-                Menu 4
-            </A>
-        </div>
-        <div class="product">
-            <div class="product-items">
-                <img class="product-img" src="https://th.bing.com/th/id/OIP.65_oJiIx-edHRNYoBADKFQHaHa?rs=1&pid=ImgDetMain" alt="">
-                <p style="font-size: 1.2vw;"> JBL Go 3</p>
-                <p style="font-size: 1vw;"> 990 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img" src="https://th.bing.com/th/id/OIP.lBN3S5voqoPJ6aVe43vymwHaHa?rs=1&pid=ImgDetMain" alt="">
-                <p style="font-size: 1.2vw;"> JBL Go 4</p>
-                <p style="font-size: 1vw;"> 1990 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img"src="https://m.media-amazon.com/images/I/61JdoSNoVzL.jpg" alt="">
-                <p style="font-size:1.2vw;"> JBL clip 4</p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img"src="https://th.bing.com/th/id/R.da8229d0f3759a039321de394f296c80?rik=ZM06Uc6wQ9y9fA&riu=http%3a%2f%2fwww.custommacbd.com%2fcdn%2fshop%2fproducts%2f3_JBL_FLIP6_FRONT_BLACK_29509_x2-_1_1200x1200.jpg%3fv%3d1641157519&ehk=2nWBS4S%2fCKsjhuKUbCuFTqcDA60%2fYZQoTXx1%2fEOReTc%3d&risl=&pid=ImgRaw&r=0" alt="">
-                <p style="font-size:1.2vw;"> JBL Flip 6</p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img" src="https://www.courtsmammouth.mu/96087-product_set/jbl-charge-5-black.jpg" alt="">
-                <p style="font-size:1.2vw;"> JBL Charge 5</p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img" src="https://i5.walmartimages.com/asr/10cf3040-4367-46c8-8ac8-0a8156244de4.1ac97412a64cfe83ae06a22e27fac6b2.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF" alt="">
-                <p style="font-size: 1.2vw;"> JBL Xtreme 3</p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img"src="https://www.ekran-osijek.com/wp-content/uploads/2024/10/JBL-XTREME-4-crni-2.jpg" alt="">
-                <p style="font-size:1.2vw;"> JBL Xtreme 4 </p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img" src="https://www.atprosound.com/wp-content/uploads/2022/11/JBL-Boombox-3-02-AT-Prosound.jpg" alt="">
-                <p style="font-size:1.2vw;"> JBL Boombox 3</p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img"src="https://th.bing.com/th/id/OIP.zvcvx3hHEd-wdwHcXaDhnwHaHa?w=600&h=600&rs=1&pid=ImgDetMain" alt="">
-                <p style="font-size:1.2vw;"> JBL Partybox Encore</p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img" src="https://i5.walmartimages.com/seo/JBL-PartyBox-On-The-Go-Essential-with-Wireless-Microphone-Water-Resistance_13b8df1a-384f-45c3-b15d-ffb770805efc.5b6133dd7fb7861a6e6b2c4738b0b8b4.jpeg" alt="">
-                <p style="font-size:1.2vw;"> JBL Partybox Go </p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img" src="https://images.sonicelectronix.com/images/5241629/main/partybox110.jpg" alt="">
-                <p style="font-size:1.2vw;"> JBL Partybox 110</p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img" src="https://www.greenware.lk/wp-content/uploads/2021/05/JBL-PartyBox-310.jpg" alt="">
-                <p style="font-size:1.2vw;"> JBL Partybox 310</p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img"src="https://cdn.shopify.com/s/files/1/0003/7719/2499/files/1.AVStore-JBL-PartyBox-710-Bluetooth-Speaker-Front-View-Hero_1200x.jpg?v=1683891561" alt="">
-                <p style="font-size:1.2vw;"> JBL Partybox 710</p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            <div class="product-items">
-                <img class="product-img"src="https://www.trendygadget.com/wp-content/uploads/2023/08/JBL_PARTYBOX_ULTIMATE_FRONT_42578_x4_2.jpg" alt="">
-                <p style="font-size:1.2vw;"> JBL Partybox Ultimate</p>
-                <p style="font-size: 1vw;"> 500 THB</p>
-            </div>
-            
+      <div class="sidebar">
+        <input onkeyup="searchsomething(this)" id="txt_search" type="text" class="sidebar-search" placeholder="Search something...">
+  
+        <a onclick="searchproduct('all')" class="sidebar-items">
+          All product
+        </a>
+        <a onclick="searchproduct('shoe')" class="sidebar-items">
+          Shoe
+        </a>
+        <a onclick="searchproduct('shirt')" class="sidebar-items">
+          Shirt
+        </a>
+     
+      <a onclick="searchproduct('jbl')" class="sidebar-items">
+        JBL
+      </a>
+      
     </div>
-    <div class="modal"  style="display: none;">
-        <div class="modal-by"></div>
-        <div class="modal-page">
-            <h2>Detail</h2>
-            <br>
-            <div class="modal-content"> 
-                <img class="modalesc-img" src="https://images.unsplash.com/photo-1605957072929-4fd939a05e24?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt="">
-           
-                <div class="modal-detail">
-                <p style="font-size: 1.5vw;">Product name</p>
-                <p style="font-size: 1.2vw;">500THB</p> 
-                <br>
-                <p style="color: #adadad;;"> ใช้ดีๆๆๆๆๆๆ bel go
-                    dvdsvdvdvsdvsdvvvvvvvvvsvsv dsvdddvv
-                    vsddvdv sdvdsvdvsvsod by frank youhappy me happy </p>
-                 <br>
-                 <div class="btn-control">
-                    <button class="btn">
-                        Close
-                    </button>
-                    <button class=" btn btn-buy"> 
-                        Add to cart 
-                    </button>
-                     </div>
-             </div>
-            </div>
-     </div>
-    </div>
-    <div class="modal" style="display: none;" >
-        <div class="modal-b"></div>
-        <div class="modal-page">
-            <h2>My cart</h2>
-            <br>
-            <div class="cartlist">
-                <div class="cartlist-items">
-                    <div class="cartlist-left">
-                        <img src="https://images.unsplash.com/photo-1605957072929-4fd939a05e24?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <div class="cartlist-detail">
-                            <p style="font-size: 1.5vw;"> Product  name</p>
-                            <p style="font-size: 1.2vw;">500THB</p>
-                        </div>
-                    </div>
-                    <div class="cartlist-right">
-                        <p class="btnc">-</p>
-                        <p style="margin: 0 20px;">1</p>
-                        <p class="btnc">+</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cartlist">
-                <div class="cartlist-items">
-                    <div class="cartlist-left">
-                        <img src="https://images.unsplash.com/photo-1605957072929-4fd939a05e24?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <div class="cartlist-detail">
-                            <p style="font-size: 1.5vw;"> Product  name</p>
-                            <p style="font-size: 1.2vw;">500THB</p>
-                        </div>
-                    </div>
-                    <div class="cartlist-right">
-                        <p class="btnc">-</p>
-                        <p style="margin: 0 20px;">1</p>
-                        <p class="btnc">+</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cartlist">
-                <div class="cartlist-items">
-                    <div class="cartlist-left">
-                        <img src="https://images.unsplash.com/photo-1605957072929-4fd939a05e24?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <div class="cartlist-detail">
-                            <p style="font-size: 1.5vw;"> Product  name</p>
-                            <p style="font-size: 1.2vw;">500THB</p>
-                        </div>
-                    </div>
-                    <div class="cartlist-right">
-                        <p class="btnc">-</p>
-                        <p style="margin: 0 20px;">1</p>
-                        <p class="btnc">+</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cartlist">
-                <div class="cartlist-items">
-                    <div class="cartlist-left">
-                        <img src="https://images.unsplash.com/photo-1605957072929-4fd939a05e24?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <div class="cartlist-detail">
-                            <p style="font-size: 1.5vw;"> Product  name</p>
-                            <p style="font-size: 1.2vw;">500THB</p>
-                        </div>
-                    </div>
-                    <div class="cartlist-right">
-                        <p class="btnc">-</p>
-                        <p style="margin: 0 20px;">1</p>
-                        <p class="btnc">+</p>
-                    </div>
-                </div>
-           
-            </div>
-            <div class="btn-control">
-                <button class="btn">
-                    Cancel
-                </button>
-                <button class="btn btn-buy">
-                    Buy
-                </button>
-            </div>
-     </div>
+
+      <div id="productlist" class="product">
+  
+      </div>
     </div>
   
+    <div id="modalDesc" class="modal" style="display: none;">
+      <div onclick="closeModal()" class="modal-bg"></div>
+      <div class="modal-page">
+        <h2>Detail</h2>
+        <br>
+        <div class="modaldesc-content">
+          <img id="mdd-img" class="modaldesc-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+          <div class="modaldesc-detail">
+            <p id="mdd-name" style="font-size: 1.5vw;">Product name</p>
+            <p id="mdd-price" style="font-size: 1.2vw;">500 THB</p>
+            <br>
+            <p id="mdd-desc" style="color: #adadad;">Lorem iaudantium harum doloremque alias. Quae, vel ipsum quasi, voluptas, sit optio nemo magni numquam non dicta voluptates porro! Vero eveniet numquam sit aut vel eligendi officiis iste tenetur expedita. Delectus vero quibusdam adipisci in. Esse.</p>
+            <br>
+            <div class="btn-control">
+              <button onclick="closeModal()" class="btn">
+                Close
+              </button>
+              <button onclick="addtocart()" class="btn btn-buy">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="modalCart" class="modal" style="display: none;">
+      <div onclick="closeModal()" class="modal-bg"></div>
+      <div class="modal-page">
+        <h2>My cart</h2>
+        <br>
+        <div id="mycart" class="cartlist">
+  
+        </div>
+        <div class="btn-control">
+          <button onclick="closeModal()" class="btn">
+            Cancel
+          </button>
+          <button class="btn btn-buy">
+            Buy
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-</body>
+  
+  </body>
+
+  
 </html>
