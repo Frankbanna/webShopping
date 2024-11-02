@@ -61,6 +61,62 @@ var product = [{
     price: 1990,
     description: 'god Xtreme 3',
     type: 'jbl'
+},{
+    id:10,
+    img: 'https://www.ekran-osijek.com/wp-content/uploads/2024/10/JBL-XTREME-4-crni-2.jpg',
+    name: 'JBL Xtreme 4',
+    price: 12990,
+    description: 'god Xtreme 4',
+    type: 'jbl'
+},{
+    id:11,
+    img: 'https://www.atprosound.com/wp-content/uploads/2022/11/JBL-Boombox-3-02-AT-Prosound.jpg',
+    name: 'JBL Boombox 3',
+    price: 1990,
+    description: 'god Boombox 3',
+    type: 'jbl'
+},{
+    id:12,
+    img: 'https://th.bing.com/th/id/OIP.zvcvx3hHEd-wdwHcXaDhnwHaHa?w=600&h=600&rs=1&pid=ImgDetMain',
+    name: 'JBLPartybox Encore',
+    price: 1990,
+    description: 'godPartybox Encore',
+    type: 'jbl'
+},{
+    id:13,
+    img: 'https://i5.walmartimages.com/seo/JBL-PartyBox-On-The-Go-Essential-with-Wireless-Microphone-Water-Resistance_13b8df1a-384f-45c3-b15d-ffb770805efc.5b6133dd7fb7861a6e6b2c4738b0b8b4.jpeg',
+    name: 'JBL Partybox Go',
+    price: 1990,
+    description: 'god Partybox Go',
+    type: 'jbl'
+},{
+    id:14,
+    img: 'https://images.sonicelectronix.com/images/5241629/main/partybox110.jpg',
+    name: 'JBL Partybox 110',
+    price: 16990,
+    description: 'god Partybox 110',
+    type: 'jbl'
+},{
+    id:15,
+    img: 'https://www.greenware.lk/wp-content/uploads/2021/05/JBL-PartyBox-310.jpg',
+    name: 'JBL Partybox 310',
+    price: 21990,
+    description: 'god Partybox 310',
+    type: 'jbl'
+},{
+    id:16,
+    img: 'https://cdn.shopify.com/s/files/1/0003/7719/2499/files/1.AVStore-JBL-PartyBox-710-Bluetooth-Speaker-Front-View-Hero_1200x.jpg?v=1683891561',
+    name: 'JBL Partybox 710',
+    price: 24990,
+    description: 'god Partybox 710',
+    type: 'jbl'
+},{
+    id:17,
+    img: 'https://www.trendygadget.com/wp-content/uploads/2023/08/JBL_PARTYBOX_ULTIMATE_FRONT_42578_x4_2.jpg',
+    name: 'JBL Partybox Ultimate',
+    price: 64990,
+    description: 'god Partybox Ultimate',
+    type: 'jbl'
 }
 ];
 
