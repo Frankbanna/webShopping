@@ -42,12 +42,26 @@ var product = [{
     type: 'jbl'
 },{
     id:7,
-    img: 'https://m.media-amazon.com/images/I/61JdoSNoVzL.jpg',
-    name: 'JBL Clip 4',
+    img: 'https://th.bing.com/th/id/R.da8229d0f3759a039321de394f296c80?rik=ZM06Uc6wQ9y9fA&riu=http%3a%2f%2fwww.custommacbd.com%2fcdn%2fshop%2fproducts%2f3_JBL_FLIP6_FRONT_BLACK_29509_x2-_1_1200x1200.jpg%3fv%3d1641157519&ehk=2nWBS4S%2fCKsjhuKUbCuFTqcDA60%2fYZQoTXx1%2fEOReTc%3d&risl=&pid=ImgRaw&r=0',
+    name: 'JBL Flip 6',
     price: 1990,
-    description: 'god Clip 4',
+    description: 'god Flip 6',
     type: 'jbl'
-},
+},{
+    id:8,
+    img: 'https://www.courtsmammouth.mu/96087-product_set/jbl-charge-5-black.jpg',
+    name: 'JBL Charge 5',
+    price: 1990,
+    description: 'god Charge 5',
+    type: 'jbl'
+},{
+    id:9,
+    img: 'https://i5.walmartimages.com/asr/10cf3040-4367-46c8-8ac8-0a8156244de4.1ac97412a64cfe83ae06a22e27fac6b2.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF',
+    name: 'JBL Xtreme 3',
+    price: 1990,
+    description: 'god Xtreme 3',
+    type: 'jbl'
+}
 ];
 
 
