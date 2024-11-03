@@ -1,138 +1,150 @@
-var product = [{
-    id: 1,
-    img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740',
-    name: 'Nike',
-    price: 7000,
-    description: 'Nike Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, labore dolorum optio ad consequatur cupiditate!',
-    type: 'shoe'
-}, {
-    id: 2,
-    img: 'https://images.unsplash.com/photo-1511746315387-c4a76990fdce?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740',
-    name: 'Adidas shirt',
-    price: 1500,
-    description: 'Adidas shirt Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, labore dolorum optio ad consequatur cupiditate!',
-    type: 'shirt'
-}, {
-    id: 3,
-    img: 'https://images.unsplash.com/photo-1593287073863-c992914cb3e3?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774',
-    name: 'Adidas shoe',
-    price: 45000,
-    description: 'Adidas shoe Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, labore dolorum optio ad consequatur cupiditate!',
-    type: 'shoe'
-},{
-    id: 4,
-    img: 'https://th.bing.com/th/id/OIP.65_oJiIx-edHRNYoBADKFQHaHa?rs=1&pid=ImgDetMain',
-    name: 'JBL Go 3',
-    price: 990,
-    description: 'god go 3',
-    type: 'jbl'
-},{
-    id:5,
-    img: 'https://th.bing.com/th/id/OIP.lBN3S5voqoPJ6aVe43vymwHaHa?rs=1&pid=ImgDetMain',
-    name: 'JBL Go 4',
-    price: 1990,
-    description: 'god go 4',
-    type: 'jbl'
-},{
-    id:6,
-    img: 'https://m.media-amazon.com/images/I/61JdoSNoVzL.jpg',
-    name: 'JBL Clip 4',
-    price: 1990,
-    description: 'god Clip 4',
-    type: 'jbl'
-},{
-    id:7,
-    img: 'https://th.bing.com/th/id/R.da8229d0f3759a039321de394f296c80?rik=ZM06Uc6wQ9y9fA&riu=http%3a%2f%2fwww.custommacbd.com%2fcdn%2fshop%2fproducts%2f3_JBL_FLIP6_FRONT_BLACK_29509_x2-_1_1200x1200.jpg%3fv%3d1641157519&ehk=2nWBS4S%2fCKsjhuKUbCuFTqcDA60%2fYZQoTXx1%2fEOReTc%3d&risl=&pid=ImgRaw&r=0',
-    name: 'JBL Flip 6',
-    price: 1990,
-    description: 'god Flip 6',
-    type: 'jbl'
-},{
-    id:8,
-    img: 'https://www.courtsmammouth.mu/96087-product_set/jbl-charge-5-black.jpg',
-    name: 'JBL Charge 5',
-    price: 1990,
-    description: 'god Charge 5',
-    type: 'jbl'
-},{
-    id:9,
-    img: 'https://i5.walmartimages.com/asr/10cf3040-4367-46c8-8ac8-0a8156244de4.1ac97412a64cfe83ae06a22e27fac6b2.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF',
-    name: 'JBL Xtreme 3',
-    price: 1990,
-    description: 'god Xtreme 3',
-    type: 'jbl'
-},{
-    id:10,
-    img: 'https://www.ekran-osijek.com/wp-content/uploads/2024/10/JBL-XTREME-4-crni-2.jpg',
-    name: 'JBL Xtreme 4',
-    price: 12990,
-    description: 'god Xtreme 4',
-    type: 'jbl'
-},{
-    id:11,
-    img: 'https://www.atprosound.com/wp-content/uploads/2022/11/JBL-Boombox-3-02-AT-Prosound.jpg',
-    name: 'JBL Boombox 3',
-    price: 1990,
-    description: 'god Boombox 3',
-    type: 'jbl'
-},{
-    id:12,
-    img: 'https://th.bing.com/th/id/OIP.zvcvx3hHEd-wdwHcXaDhnwHaHa?w=600&h=600&rs=1&pid=ImgDetMain',
-    name: 'JBLPartybox Encore',
-    price: 1990,
-    description: 'godPartybox Encore',
-    type: 'jbl'
-},{
-    id:13,
-    img: 'https://i5.walmartimages.com/seo/JBL-PartyBox-On-The-Go-Essential-with-Wireless-Microphone-Water-Resistance_13b8df1a-384f-45c3-b15d-ffb770805efc.5b6133dd7fb7861a6e6b2c4738b0b8b4.jpeg',
-    name: 'JBL Partybox Go',
-    price: 1990,
-    description: 'god Partybox Go',
-    type: 'jbl'
-},{
-    id:14,
-    img: 'https://images.sonicelectronix.com/images/5241629/main/partybox110.jpg',
-    name: 'JBL Partybox 110',
-    price: 16990,
-    description: 'god Partybox 110',
-    type: 'jbl'
-},{
-    id:15,
-    img: 'https://www.greenware.lk/wp-content/uploads/2021/05/JBL-PartyBox-310.jpg',
-    name: 'JBL Partybox 310',
-    price: 21990,
-    description: 'god Partybox 310',
-    type: 'jbl'
-},{
-    id:16,
-    img: 'https://cdn.shopify.com/s/files/1/0003/7719/2499/files/1.AVStore-JBL-PartyBox-710-Bluetooth-Speaker-Front-View-Hero_1200x.jpg?v=1683891561',
-    name: 'JBL Partybox 710',
-    price: 24990,
-    description: 'god Partybox 710',
-    type: 'jbl'
-},{
-    id:17,
-    img: 'https://www.trendygadget.com/wp-content/uploads/2023/08/JBL_PARTYBOX_ULTIMATE_FRONT_42578_x4_2.jpg',
-    name: 'JBL Partybox Ultimate',
-    price: 64990,
-    description: 'god Partybox Ultimate',
-    type: 'jbl'
-}
-];
+// var product = [{
+//     id: 1,
+//     img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740',
+//     name: 'Nike',
+//     price: 7000,
+//     description: 'Nike Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, labore dolorum optio ad consequatur cupiditate!',
+//     type: 'shoe'
+// }, {
+//     id: 2,
+//     img: 'https://images.unsplash.com/photo-1511746315387-c4a76990fdce?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740',
+//     name: 'Adidas shirt',
+//     price: 1500,
+//     description: 'Adidas shirt Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, labore dolorum optio ad consequatur cupiditate!',
+//     type: 'shirt'
+// }, {
+//     id: 3,
+//     img: 'https://images.unsplash.com/photo-1593287073863-c992914cb3e3?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774',
+//     name: 'Adidas shoe',
+//     price: 4500,
+//     description: 'Adidas shoe Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, labore dolorum optio ad consequatur cupiditate!',
+//     type: 'shoe'
+// },{
+//     id: 4,
+//     img: 'https://th.bing.com/th/id/OIP.65_oJiIx-edHRNYoBADKFQHaHa?rs=1&pid=ImgDetMain',
+//     name: 'JBL Go 3',
+//     price: 990,
+//     description: 'god go 3',
+//     type: 'jbl'
+// },{
+//     id:5,
+//     img: 'https://th.bing.com/th/id/OIP.lBN3S5voqoPJ6aVe43vymwHaHa?rs=1&pid=ImgDetMain',
+//     name: 'JBL Go 4',
+//     price: 1990,
+//     description: 'god go 4',
+//     type: 'jbl'
+// },{
+//     id:6,
+//     img: 'https://m.media-amazon.com/images/I/61JdoSNoVzL.jpg',
+//     name: 'JBL Clip 4',
+//     price: 1990,
+//     description: 'god Clip 4',
+//     type: 'jbl'
+// },{
+//     id:7,
+//     img: 'https://th.bing.com/th/id/R.da8229d0f3759a039321de394f296c80?rik=ZM06Uc6wQ9y9fA&riu=http%3a%2f%2fwww.custommacbd.com%2fcdn%2fshop%2fproducts%2f3_JBL_FLIP6_FRONT_BLACK_29509_x2-_1_1200x1200.jpg%3fv%3d1641157519&ehk=2nWBS4S%2fCKsjhuKUbCuFTqcDA60%2fYZQoTXx1%2fEOReTc%3d&risl=&pid=ImgRaw&r=0',
+//     name: 'JBL Flip 6',
+//     price: 1990,
+//     description: 'god Flip 6',
+//     type: 'jbl'
+// },{
+//     id:8,
+//     img: 'https://www.courtsmammouth.mu/96087-product_set/jbl-charge-5-black.jpg',
+//     name: 'JBL Charge 5',
+//     price: 1990,
+//     description: 'god Charge 5',
+//     type: 'jbl'
+// },{
+//     id:9,
+//     img: 'https://i5.walmartimages.com/asr/10cf3040-4367-46c8-8ac8-0a8156244de4.1ac97412a64cfe83ae06a22e27fac6b2.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF',
+//     name: 'JBL Xtreme 3',
+//     price: 1990,
+//     description: 'god Xtreme 3',
+//     type: 'jbl'
+// },{
+//     id:10,
+//     img: 'https://www.ekran-osijek.com/wp-content/uploads/2024/10/JBL-XTREME-4-crni-2.jpg',
+//     name: 'JBL Xtreme 4',
+//     price: 12990,
+//     description: 'god Xtreme 4',
+//     type: 'jbl'
+// },{
+//     id:11,
+//     img: 'https://www.atprosound.com/wp-content/uploads/2022/11/JBL-Boombox-3-02-AT-Prosound.jpg',
+//     name: 'JBL Boombox 3',
+//     price: 1990,
+//     description: 'god Boombox 3',
+//     type: 'jbl'
+// },{
+//     id:12,
+//     img: 'https://th.bing.com/th/id/OIP.zvcvx3hHEd-wdwHcXaDhnwHaHa?w=600&h=600&rs=1&pid=ImgDetMain',
+//     name: 'JBLPartybox Encore',
+//     price: 1990,
+//     description: 'godPartybox Encore',
+//     type: 'jbl'
+// },{
+//     id:13,
+//     img: 'https://i5.walmartimages.com/seo/JBL-PartyBox-On-The-Go-Essential-with-Wireless-Microphone-Water-Resistance_13b8df1a-384f-45c3-b15d-ffb770805efc.5b6133dd7fb7861a6e6b2c4738b0b8b4.jpeg',
+//     name: 'JBL Partybox Go',
+//     price: 1990,
+//     description: 'god Partybox Go',
+//     type: 'jbl'
+// },{
+//     id:14,
+//     img: 'https://images.sonicelectronix.com/images/5241629/main/partybox110.jpg',
+//     name: 'JBL Partybox 110',
+//     price: 16990,
+//     description: 'god Partybox 110',
+//     type: 'jbl'
+// },{
+//     id:15,
+//     img: 'https://www.greenware.lk/wp-content/uploads/2021/05/JBL-PartyBox-310.jpg',
+//     name: 'JBL Partybox 310',
+//     price: 21990,
+//     description: 'god Partybox 310',
+//     type: 'jbl'
+// },{
+//     id:16,
+//     img: 'https://cdn.shopify.com/s/files/1/0003/7719/2499/files/1.AVStore-JBL-PartyBox-710-Bluetooth-Speaker-Front-View-Hero_1200x.jpg?v=1683891561',
+//     name: 'JBL Partybox 710',
+//     price: 24990,
+//     description: 'god Partybox 710',
+//     type: 'jbl'
+// },{
+//     id:17,
+//     img: 'https://www.trendygadget.com/wp-content/uploads/2023/08/JBL_PARTYBOX_ULTIMATE_FRONT_42578_x4_2.jpg',
+//     name: 'JBL Partybox Ultimate',
+//     price: 64990,
+//     description: 'god Partybox Ultimate',
+//     type: 'jbl'
+// }
+// ];
 
-
+var product ;
 
 $(document).ready(() => {
-    var html = '';
-    for (let i = 0; i < product.length; i++) {
-        html += `<div onclick="openProductDetail(${i})" class="product-items ${product[i].type}">
-                    <img class="product-img" src="${product[i].img}" alt="">
-                    <p style="font-size: 1.2vw;">${product[i].name}</p>
-                    <p stlye="font-size: 1vw;">${ numberWithCommas(product[i].price) } THB</p>
-                </div>`;
-    }
-    $("#productlist").html(html);
-
+    $.ajax({
+        method: 'get',
+        url: './api/getallproduct.php',
+        success: function(response){
+            console.log(response)
+            if(response.RespCode == 200){
+                product = response.Result;
+                var html = '';
+                for (let i = 0; i < product.length; i++) {
+                    html += `<div onclick="openProductDetail(${i})" class="product-items ${product[i].type}">
+                                <img class="product-img" src="./imgs/${product[i].img}" alt="">
+                                <p style="font-size: 1.2vw;">${product[i].name}</p>
+                                <p stlye="font-size: 1vw;">${ numberWithCommas(product[i].price) } THB</p>
+                            </div>`;
+                }
+                $("#productlist").html(html);
+            }
+        },error:function(err){
+            console.log(err)
+        }
+    })
+   
 })
 
 function numberWithCommas(x) {
@@ -152,7 +164,7 @@ function searchsomething(elem) {
     for (let i = 0; i < product.length; i++) {
         if( product[i].name.includes(value) ) {
             html += `<div onclick="openProductDetail(${i})" class="product-items ${product[i].type}">
-                    <img class="product-img" src="${product[i].img}" alt="">
+                    <img class="product-img" src="./imgs/${product[i].img}" alt="">
                     <p style="font-size: 1.2vw;">${product[i].name}</p>
                     <p stlye="font-size: 1vw;">${ numberWithCommas(product[i].price) } THB</p>
                 </div>`;
@@ -182,7 +194,7 @@ function openProductDetail(index) {
     productindex = index;
     console.log(productindex)
     $("#modalDesc").css('display', 'flex')
-    $("#mdd-img").attr('src', product[index].img);
+    $("#mdd-img").attr('src', './imgs/' + product[index].img);
     $("#mdd-name").text(product[index].name)
     $("#mdd-price").text( numberWithCommas(product[index].price) + ' THB')
     $("#mdd-desc").text(product[index].description)
@@ -236,7 +248,7 @@ function rendercart() {
         for (let i = 0; i < cart.length; i++) {
             html += `<div class="cartlist-items">
                         <div class="cartlist-left">
-                            <img src="${cart[i].img}" alt="">
+                            <img src="./imgs/${cart[i].img}" alt="">
                             <div class="cartlist-detail">
                                 <p style="font-size: 1.5vw;">${cart[i].name}</p>
                                 <p style="font-size: 1.2vw;">${ numberWithCommas(cart[i].price * cart[i].count) } THB</p>
@@ -297,4 +309,39 @@ function deinitems(action, index) {
         $("#countitems"+index).text(cart[index].count)
         rendercart();
     }
+}
+function buynow(){
+    $.ajax({
+        method: 'post',
+        url:'./api/buynow.php',
+        data:{
+            product: cart
+        },success: function(response){
+            console.log(response)
+            if(response.RespCode == 200 ){
+                Swal.fire({
+                    icon: 'succsess',
+                    title: 'Thank you ',
+                    html: `<p> Amount : ${response.Amount.Amount}</p>
+                            <p> Shipping : ${response.Amount.Shipping}</p>
+                             <p> Vat : ${response.Amount.Vat}</p>
+                             <p> Netamount : ${response.Amount.Netamount}</p>`
+                }).then((res) => {
+                    if(res.isConfirmed) {
+                        cart = [];
+                        closeModal();
+                        $("#cartcount").css('display','none')
+                    }
+                })
+            }
+            else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Something is went wrong! '
+                })
+            }
+        },error: function(err){
+            console.log(err)
+        }
+    })
 }
