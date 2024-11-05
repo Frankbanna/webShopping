@@ -36,26 +36,24 @@ function numberWithCommas(x) {
 }
 
 function searchsomething(elem) {
-    // console.log('#'+elem.id)
-    var value = $('#'+elem.id).val()
-    console.log(value)
+    var value = $('#' + elem.id).val()
+    console.log(value);
 
     var html = '';
     for (let i = 0; i < product.length; i++) {
-        if( product[i].name.includes(value) ) {
+        if (product[i].name.includes(value)) {
             html += `<div onclick="openProductDetail(${i})" class="product-items ${product[i].type}">
                     <img class="product-img" src="./imgs/${product[i].img}" alt="">
                     <p style="font-size: 1.2vw;">${product[i].name}</p>
-                    <p stlye="font-size: 1vw;">${ numberWithCommas(product[i].price) } THB</p>
+                    <p style="font-size: 1vw;">${ numberWithCommas(product[i].price) } THB</p>
                 </div>`;
         }
     }
-    if(html == '') {
+    if (html === '') {
         $("#productlist").html(`<p>Not found product</p>`);
     } else {
         $("#productlist").html(html);
     }
-
 }
 
 function searchproduct(param) {
