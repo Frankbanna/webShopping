@@ -1,1 +1,1 @@
-<iframe width="1280" height="690" src="https://www.youtube.com/embed/OR4QbTaLD30" title="Demonstration of the My Shopping Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Demonstration of the My Shopping Program. https://youtu.be/OR4QbTaLD30?si=Eu_Wy1QRr4rJWMZR
